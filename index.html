@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+</head>
+<body>
+    <div id="logo">
+        <h1>Mein cooler Shop</h1>
+    </div>
+    <div id="navigation">
+        <a class="link" onclick="produktAnzeigen(1)">👕 T-shirt</a>
+        <a class="link" onclick="produktAnzeigen(2)">👟 Schuh</a>
+    </div>
+
+    <div class="produkt" id="tshirt">
+        <img src="https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80" alt="Bild von einem T-shirt">
+        <h2>Geiles T-shirt</h2>
+        <p>Bitte kauft dieses super coole T-shirt. Es ist so schon.</p>
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div id="paypal-button-tshirt"></div>
+            </div>
+          </div>
+    </div>
+
+    <div class="produkt" id="schuh">
+        <img src="https://images.unsplash.com/photo-1570051779696-244e9f680cf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2NodWh8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+        <h2>Toller Schuh</h2>
+        <p>Bitte kauft diesen super coolen Schuh. Er ist so schon.</p>
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div id="paypal-button-schuh"></div>
+            </div>
+          </div>
+    </div>
+
+    <div id="footer">
+        <p>
+            Impressum<br>
+            Test Str.123 <br>
+            55000 Bar le Duc <br>
+            Centre Social <br>
+        </p>
+    </div>
+
+    <script src="logik.JS"></script>
+</body>
+</html>
